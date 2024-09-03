@@ -174,7 +174,7 @@ jobs:
         run: mklink /J "%GITHUB_WORKSPACE%\android-sdk" "%ANDROID_SDK_ROOT%"
 
       - name: Download dependencies
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v4.1.7
         with:
           name: android-deps
           path: deps
